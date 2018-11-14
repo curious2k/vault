@@ -58,10 +58,10 @@
         </div>
         <div class="column is-half td">
           <div class="td is-borderless">
-            {{moment-format (unix creationTimestamp) 'MMM DD, YYYY hh:mm:ss A'}}
+            {{date-format (unix creationTimestamp) 'MMM DD, YYYY hh:mm:ss A'}}
             <br/>
             <small class="is-font-mono has-text-grey">
-              {{moment-format (unix creationTimestamp) }}
+              {{date-format (unix creationTimestamp) }}
             </small>
           </div>
         </div>
@@ -116,10 +116,10 @@
                 <div class="column is-one-third">
                   <div class="td is-borderless">
                     <div>
-                      {{moment-format meta.creation_time 'MMM DD, YYYY hh:mm:ss A'}}
+                      {{date-format meta.creation_time 'MMM DD, YYYY hh:mm:ss A'}}
                       <br/>
                       <small class="is-font-mono has-text-grey">
-                        {{moment-format meta.creation_time}}
+                        {{date-format meta.creation_time}}
                       </small>
                     </div>
                   </div>

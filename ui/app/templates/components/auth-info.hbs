@@ -10,8 +10,8 @@
             <AlertBanner 
               @type="warning"
               @message="We've stopped auto-renewing your token due to inactivity.
-                It will expire in {{moment-from-now auth.tokenExpirationDate interval=1000 hideSuffix=true}}.
-                on {{moment-format auth.tokenExpirationDate 'MMMM Do YYYY, h:mm:ss a'}}"
+                It will expire in {{date-from-now auth.tokenExpirationDate interval=1000 hideSuffix=true}}.
+                on {{date-format auth.tokenExpirationDate 'MMMM Do YYYY, h:mm:ss a'}}"
             />
           </li>
         {{/if}}
